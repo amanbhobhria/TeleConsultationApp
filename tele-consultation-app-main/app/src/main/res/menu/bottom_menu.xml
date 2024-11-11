@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/outline_home_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home" />
+    <item
+        android:id="@+id/appointments"
+        android:icon="@drawable/ic_appoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Appointments" />
+    <item
+        android:id="@+id/slots"
+        android:icon="@drawable/baseline_document_scanner_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Slots" />
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/outline_chat_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Chats" />
+    <item
+        android:id="@+id/tutorials"
+        android:icon="@drawable/outline_menu_book_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Tutorials" />
+</menu>

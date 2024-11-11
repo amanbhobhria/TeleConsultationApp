@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/analytics"
+            android:icon="@drawable/baseline_analytics_24"
+            android:title="Device Analytics" />
+
+        <item
+            android:id="@+id/blogs"
+            android:icon="@drawable/baseline_rss_feed_24"
+            android:title="Glaucoma blogs" />
+
+        <item
+            android:id="@+id/tutorials"
+            android:icon="@drawable/baseline_model_training_24"
+            android:title="Glaucoma Tutorials" />
+
+        <item
+            android:id="@+id/step"
+            android:icon="@drawable/ic_baseline_health"
+            android:title="PhyziHealth" />
+    </group>
+
+
+
+</menu>

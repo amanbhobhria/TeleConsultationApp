@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person1"
+            android:title="Profile" />
+        <item
+            android:id="@+id/slots"
+            android:icon="@drawable/baseline_analytics_24"
+            android:title="Device Analytics" />
+
+        <item
+            android:id="@+id/appointment"
+            android:icon="@drawable/baseline_rss_feed_24"
+            android:title="Glaucoma blogs" />
+
+        <item
+            android:id="@+id/chats"
+            android:icon="@drawable/baseline_model_training_24"
+            android:title="Glaucoma Tutorials" />
+    </group>
+</menu>

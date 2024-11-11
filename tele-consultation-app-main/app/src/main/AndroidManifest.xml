@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <uses-feature android:name="android.hardware.sensor.step counter" android:required="true" />
+    <uses-feature android:name="android.hardware.sensor.step detector" android:required="true" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/consult_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/consult_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeleClinic">
+        <activity android:name=".consultation.Patient_side_prescription_recycler" />
+        <activity android:name=".consultation.Presciption_PatientSide" />
+        <activity android:name=".consultation.Contact" />
+        <activity android:name=".consultation.StartActivity" />
+        <activity android:name=".consultation.About" />
+        <activity android:name=".consultation.View_All_Speciality" />
+        <activity android:name=".consultation.Available_Doctors" />
+        <activity android:name=".consultation.Patient_Display_Doctor" />
+        <activity android:name=".consultation.Doctors_Add_Admin" />
+        <activity android:name=".consultation.ForgotPassword" />
+        <activity android:name=".consultation.Doctors" />
+        <activity android:name=".consultation.Patient" />
+        <activity android:name=".consultation.verifyOtp" />
+        <activity android:name=".consultation.PatientLogin" />
+        <activity android:name=".consultation.DoctorsLogin" />
+        <activity android:name=".consultation.AskRole" />
+        <activity android:name=".consultation.Doctors_Update_Profile" />
+        <activity android:name=".consultation.Doctors_View_Profile" />
+        <activity android:name=".consultation.Doctor_ChooseSlots" />
+        <activity android:name=".consultation.Patient_Booking_Appointments" />
+        <activity android:name=".consultation.PrescriptionActivity" />
+        <activity android:name=".consultation.Patient_Details_Doctors_Side" />
+        <activity android:name=".consultation.Patient_MessageActivity" />
+        <activity android:name=".consultation.Doctor_Chat_Display" />
+        <activity android:name=".consultation.Doctor_MessageActivity" />
+        <activity android:name=".consultation.Patient_Chat_Display" />
+        <activity android:name=".consultation.Admin_Available_Appointments" />
+        <activity android:name=".consultation.Admin_Doctor_Details" />
+        <activity android:name=".consultation.Admin_Activity" />
+        <activity android:name=".consultation.Appointments" />
+        <activity android:name=".consultation.Feedback" />
+        <activity android:name=".consultation.Doctors_Show_Previous_Prescription_Doctors" />
+        <activity android:name=".consultation.Doctor_Side_Previous_Prescriptions" />
+        <activity android:name=".consultation.Doctors_Show_Feedback" />
+        <activity android:name=".consultation.Admin_Payments" />
+        <activity android:name=".consultation.Patient_Appointments" />
+        <activity android:name=".consultation.Admin_ChatDisplay" />
+        <activity android:name=".consultation.Admin_MessageActivity" />
+        <activity android:name=".consultation.Patient_Payment_Appt" />
+        <activity android:name=".consultation.Admin_FeedBack" />
+        <activity android:name=".consultation.Admin_Show_FeedBack" />
+        <activity android:name=".consultation.PhyziHealth_StepCounter" />
+        <activity android:name=".consultation.PhyziHealth" />
+        <activity android:name=".consultation.PhyziHealth_bmiActivity" />
+        <activity android:name=".consultation.BloodPressure" />
+        <activity android:name=".consultation.WHealth" />
+        <activity android:name=".consultation.PhyziHealth_BloodPressure_View" />
+        <activity android:name=".consultation.MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".consultation.OnBoardActivity"/>
+        <service android:name=".consultation.StepCounter_Service" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

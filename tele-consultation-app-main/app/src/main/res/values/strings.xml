@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Oculus</string>
+    <string name="slots_booked">Slots Booked:</string>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="nav_drawer_open">Open Navigation Drawer</string>
+    <string name="nav_drawer_close">Close Navigation Drawer</string>
+
+    <string-array name="Speciality">
+        <item>Infectious Disease</item>
+        <item>Dermatology &amp; Venereology</item>
+        <item>Leprology</item>
+        <item>Endocrinology &amp; Diabetes</item>
+        <item>Thyroid"</item>
+        <item>Hormone</item>
+        <item>Immunology</item>
+        <item>Rheumatology</item>
+        <item>Neurology</item>
+        <item>Ophthalmology</item>
+        <item>Cardiac Sciences</item>
+        <item>Cancer Care / Oncology</item>
+        <item>Gastroenterology, Hepatology &amp; Endoscopy</item>
+        <item>Ear Nose Throat</item>
+    </string-array>
+    <string name="screen1">Patient centric healthcare</string>
+    <string name="screen2">Growing patient volume</string>
+    <string name="screen3">Leveraging healthcare data</string>
+    <string name="screen1desc" />
+    <string name="screen2desc" />
+    <string name="screen3desc" />
+    <string name="startDesc">Create a long video or shorts and upload on youtube. Interact with your subscribers on youtube live.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ico_desc">Oculus</string>
+
+
+</resources>
