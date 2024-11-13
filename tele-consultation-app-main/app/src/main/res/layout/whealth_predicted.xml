@@ -20,18 +20,26 @@
         app:lottie_fileName="pred.json"
         app:lottie_loop="true" />
 
-    <com.savvi.rangedatepicker.CalendarPickerView
-        android:id="@+id/calender_predicted"
+
+    <CalendarView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clipToPadding="false"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="16dp"
-        android:layout_marginTop="10dp"
-        android:scrollbarStyle="outsideOverlay"
-        app:tsquare_dividerColor="@color/transparent"
-        app:tsquare_headerTextColor="@color/custom_header_text"
-        app:tsquare_orientation_horizontal="true"
         />
+
+<!--    <com.savvi.rangedatepicker.CalendarPickerView-->
+<!--        android:id="@+id/calender_predicted"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:paddingLeft="16dp"-->
+<!--        android:paddingRight="16dp"-->
+<!--        android:paddingBottom="16dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:scrollbarStyle="outsideOverlay"-->
+<!--        app:tsquare_dividerColor="@color/transparent"-->
+<!--        app:tsquare_headerTextColor="@color/custom_header_text"-->
+<!--        app:tsquare_orientation_horizontal="true"-->
+<!--        />-->
+
+
 </LinearLayout>

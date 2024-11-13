@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,7 +45,8 @@ public class PhyziHealth extends AppCompatActivity {
         women.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PhyziHealth.this, WHealth.class));
+                Toast.makeText(PhyziHealth.this,"Commented in PhyzHealth.java", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(PhyziHealth.this, WHealth.class));
             }
         });
 

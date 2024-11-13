@@ -1,20 +1,27 @@
 package com.iisc.consultation;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.hrbledevice.CharacteristicsReceivedCallBacks;
+import com.hrbledevice.DialogScanningUUID;
 import com.iisc.R;
 
 public class AskRole extends AppCompatActivity {
 
-    private ImageView doctorButton,patientButton;
-    private TextView doctorview, patientview;
+    private ImageView doctorButton,patientButton,bluetoothBtn;
+    private TextView doctorview, patientview,connectionStaus,countTxtView,batteryTxtView;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +30,75 @@ public class AskRole extends AppCompatActivity {
         patientButton = findViewById(R.id.patientLogin);
         doctorview = findViewById(R.id.doctortextView);
         patientview = findViewById(R.id.PatienttextView2);
+        bluetoothBtn = findViewById(R.id.bluetoothBtn);
+        connectionStaus = findViewById(R.id.connectionStaus);
+        countTxtView = findViewById(R.id.countTxtView);
+        batteryTxtView = findViewById(R.id.batteryTxtView);
+
+
+
+
+
+
+        bluetoothBtn.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AskRole.this, ActivityConnectDevice.class);
+
+                startActivity(intent);
+
+//                DialogScanningUUID.newInstance("", "", "device_name_here",
+//                        new DialogScanningUUID.ConnectDeviceCallBack() {
+//                            @Override
+//                            public void onRequestToBLEDevice(String macAddress) {
+//                                startActivity(new Intent(getApplicationContext(), ActivityConnectDevice.class)
+//                                        .putExtra("macAddress", macAddress));
+//                                finish();
+//                            }
+//
+//                            @Override
+//                            public void onCloseCalled() {
+//                                Toast.makeText(getApplicationContext(), "Connection Dialog Closed", Toast.LENGTH_SHORT).show();
+//                                // Handle any cleanup or UI updates when dialog is closed
+//                            }
+//                        }).show(getSupportFragmentManager(), "BleDevice");
+//
+//            }
+            }});
+
+        // Implement callbacks to receive and display Bluetooth data
+//        CharacteristicsReceivedCallBacks callbacks = new CharacteristicsReceivedCallBacks() {
+//            @Override
+//            public void onRotationCountReading(String count) {
+//                if (!TextUtils.isEmpty(count)) {
+//                    countTxtView.setText("Total Count: " + count);
+//                }
+//            }
+//
+//            @Override
+//            public void onBatteryReading(String batteryLevel) {
+//                if (!TextUtils.isEmpty(batteryLevel)) {
+//                    batteryTxtView.setText("Battery Level: " + batteryLevel + "%");
+//                }
+//            }
+//
+//            @Override
+//            public void onConnected(String connectionStatus) {
+//                if (!TextUtils.isEmpty(connectionStatus)) {
+//                    boolean isConnected = Boolean.parseBoolean(connectionStatus);
+//                    connectionStaus.setText(isConnected ? "Connected" : "Failed");
+//                    connectionStaus.setTextColor(isConnected ? Color.GREEN : Color.RED);
+//                }
+//            }
+//        };
+//
+
+
+
 
         doctorButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +127,8 @@ public class AskRole extends AppCompatActivity {
                 checkPatientSession();
             }
         });
+
+
     }
 
     private void checkPatientSession() {

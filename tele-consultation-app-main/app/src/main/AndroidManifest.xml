@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -21,10 +27,18 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
-    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
-    <uses-feature android:name="android.hardware.sensor.step counter" android:required="true" />
-    <uses-feature android:name="android.hardware.sensor.step detector" android:required="true" />
-    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.step counter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.step detector"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -33,6 +47,12 @@
         android:roundIcon="@mipmap/consult_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeleClinic">
+        <activity
+            android:name=".consultation.ActivityConnectDevice"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityConnectDevice"
+            android:exported="false" />
         <activity android:name=".consultation.Patient_side_prescription_recycler" />
         <activity android:name=".consultation.Presciption_PatientSide" />
         <activity android:name=".consultation.Contact" />
@@ -80,13 +100,17 @@
         <activity android:name=".consultation.BloodPressure" />
         <activity android:name=".consultation.WHealth" />
         <activity android:name=".consultation.PhyziHealth_BloodPressure_View" />
-        <activity android:name=".consultation.MainActivity" android:exported="true">
+        <activity
+            android:name=".consultation.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".consultation.OnBoardActivity"/>
+        <activity android:name=".consultation.OnBoardActivity" />
+
         <service android:name=".consultation.StepCounter_Service" />
 
         <meta-data
